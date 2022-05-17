@@ -2,6 +2,7 @@ connection: "bigquery_standard"
 
 # include all the views
 include: "/views/**/*.view"
+include: "/analysis/**/dependencies.explore.lkml"
 
 datagroup: dependency_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;

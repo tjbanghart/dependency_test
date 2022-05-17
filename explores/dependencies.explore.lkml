@@ -3,6 +3,7 @@ include: "/views/projects.view.lkml"
 include: "/views/versions.view.lkml"
 
 explore: dependencies {
+  view_name: dependencies
   join: projects {
     type: left_outer
     sql_on: ${dependencies.project_id} = ${projects.id} ;;
