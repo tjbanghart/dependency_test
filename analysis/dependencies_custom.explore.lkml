@@ -15,16 +15,19 @@ explore: dependencies_with_repository {
   }
 }
 
+# Place in `dependency_demo` model
 explore: +dependencies_with_repository {
-  aggregate_table: rollup__projects_language__versions_published_timestamp_date {
+  aggregate_table: rollup__projects_latest_release_publish_timestamp_date {
     query: {
-      dimensions: [projects.language, versions.published_timestamp_date]
+      dimensions: [projects.latest_release_publish_timestamp_date]
       measures: [
+        projects.average_java_dependent_project,
         projects.avg_dependent_projects,
         projects.avg_dependent_repos,
         projects.count,
         projects.sum_dependent_projects,
         projects.sum_dependent_repositories,
+        projects.sum_java_dependent_project
       ]
     }
     materialization: {
