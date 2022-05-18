@@ -15,6 +15,8 @@ explore: dependencies_with_repository {
   }
 }
 
+# WITHOUT AA: https://gcps228.cloud.looker.com/explore/dependency_demo/dependencies?qid=Vb2ZVgyd4vkSURqfx0a97A
+# WITH AA: https://gcps228.cloud.looker.com/explore/dependency_demo/dependencies_with_repository?toggle=fil&qid=Hu1pib0E0y5Q1wh5OREu3z
 explore: +dependencies_with_repository {
   aggregate_table: rollup__projects_latest_release_publish_timestamp_date {
     query: {
