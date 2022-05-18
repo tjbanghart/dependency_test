@@ -5,7 +5,7 @@ include: "/views/**/*.view"
 include: "/analysis/**/*.lkml"
 
 datagroup: dependency_default_datagroup {
-  # sql_trigger: SELECT MAX(id) FROM etl_log;;
+  sql_trigger: SELECT MAX(id) FROM `bigquery-public-data.libraries_io.versions`;;
   max_cache_age: "1 hour"
 }
 

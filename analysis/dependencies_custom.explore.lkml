@@ -14,3 +14,21 @@ explore: dependencies_with_repository {
     sql_on: ${repositories.language} = ${top_n_by_language.language} ;;
   }
 }
+
+explore: +dependencies_with_repository {
+  aggregate_table: rollup__projects_language__versions_published_timestamp_date {
+    query: {
+      dimensions: [projects.language, versions.published_timestamp_date]
+      measures: [
+        projects.avg_dependent_projects,
+        projects.avg_dependent_repos,
+        projects.count,
+        projects.sum_dependent_projects,
+        projects.sum_dependent_repositories,
+      ]
+    }
+    materialization: {
+      datagroup_trigger: dependency_default_datagroup
+    }
+  }
+}
