@@ -2,6 +2,7 @@ include: "/views/dependencies.view.lkml"
 include: "/views/projects.view.lkml"
 include: "/views/versions.view.lkml"
 
+
 explore: dependencies {
   view_name: dependencies
   join: projects {

@@ -53,15 +53,7 @@ view: versions {
   dimension_group: published_timestamp {
     type: time
     description: "The timestamp of when the version was published."
-    timeframes: [
-      raw,
-      time,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
+    timeframes: [raw]
     sql: ${TABLE}.published_timestamp ;;
   }
 
