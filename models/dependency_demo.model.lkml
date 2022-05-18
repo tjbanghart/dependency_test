@@ -6,7 +6,7 @@ include: "/custom/**/*.lkml"
 
 datagroup: dependency_default_datagroup {
   sql_trigger: SELECT MAX(id) FROM `bigquery-public-data.libraries_io.versions`;;
-  max_cache_age: "1 hour"
+  max_cache_age: "100 hour"
 }
 
 persist_with: dependency_default_datagroup
