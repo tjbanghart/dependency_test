@@ -1,6 +1,7 @@
 include: "/custom/**/*.view"
 include: "/custom/**/*.explore"
 
+# https://gcps228.cloud.looker.com/explore/dependency_demo/dependencies_with_repository?toggle=fil&qid=ezGui5iFUxogJE2dMV648O
 view: top_n_by_language {
   extends: [parameters]
   derived_table: {
