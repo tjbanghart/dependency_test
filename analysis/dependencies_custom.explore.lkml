@@ -15,7 +15,6 @@ explore: dependencies_with_repository {
   }
 }
 
-# Place in `dependency_demo` model
 explore: +dependencies_with_repository {
   aggregate_table: rollup__projects_latest_release_publish_timestamp_date {
     query: {
