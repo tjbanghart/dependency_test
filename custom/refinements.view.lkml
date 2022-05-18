@@ -1,6 +1,6 @@
 include: "/views/**/*.view.lkml"
-include: "/analysis/**/*.explore"
-include: "/analysis/**/*.view"
+include: "/custom/**/*.explore"
+include: "/custom/**/*.view"
 
 view: +versions {
   # Adds additional timeframes to a previously defined dimension

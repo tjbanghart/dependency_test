@@ -1,5 +1,5 @@
-include: "/analysis/**/*.view"
-include: "/analysis/**/*.explore"
+include: "/custom/**/*.view"
+include: "/custom/**/*.explore"
 
 view: top_n_by_language {
   extends: [parameters]

@@ -1,6 +1,6 @@
 include: "/explores/dependencies.explore.lkml"
 include: "/views/repositories.view.lkml"
-include: "/analysis/**/*.view.lkml"
+include: "/custom/**/*.view.lkml"
 
 explore: dependencies_with_repository {
   extends: [dependencies]
