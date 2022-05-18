@@ -31,4 +31,8 @@ view: +projects {
     sql: ${dependent_projects_count} ;;
     filters: [language: "Java"]
   }
+  measure: percent_java_projects {
+    type: number
+    sql: SAFE_DIVIDE(${sum_java_dependent_project}, ${sum_dependent_projects}) ;;
+  }
 }
